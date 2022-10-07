@@ -4,17 +4,17 @@ import {Card} from "react-bootstrap";
 
 const Albums = () => {
     const albumInfo = [
-        {image: '%PUBLIC_URL%/images/beach.jpg', title: 'Beaches'},
-        {image: '%PUBLIC_URL%/fall.jpg', title: 'Fall Time'},
-        {image: './flowers.jpg', title: 'Flowers'},
-        {image: './moon.jpg', title: 'Night Sky'},
-        {image: './mountain.jpg', title: 'Magnificent Mountains'},
-        {image: './spring.jpg', title: 'Spring Time'},
-        {image: './summertime.jpg', title: 'Summer Time'},
-        {image: './sunrise.jpg', title: 'Sunrises'},
-        {image: './sunset.jpg', title: 'Sunsets'},
-        {image: './waterfall.jpg', title: 'Waterfalls'},
-        {image: './winter.jpg', title: 'Winter Time'}
+        {image: 'https://raw.githubusercontent.com/PennyNichols/react-gallery/main/react-gallery/public/images/beach.jpg', title: 'Beaches'},
+        {image: 'https://raw.githubusercontent.com/PennyNichols/react-gallery/main/react-gallery/public/images/fall.jpg', title: 'Fall Time'},
+        {image: 'https://github.com/PennyNichols/react-gallery/blob/main/react-gallery/public/images/flowers.jpg?raw=true', title: 'Flowers'},
+        {image: 'https://github.com/PennyNichols/react-gallery/blob/main/react-gallery/public/images/moon.jpg?raw=true', title: 'Night Sky'},
+        {image: 'https://github.com/PennyNichols/react-gallery/blob/main/react-gallery/public/images/mountain.jpg?raw=true', title: 'Magnificent Mountains'},
+        {image: 'https://github.com/PennyNichols/react-gallery/blob/main/react-gallery/public/images/spring.jpg?raw=true', title: 'Spring Time'},
+        {image: 'https://github.com/PennyNichols/react-gallery/blob/main/react-gallery/public/images/summertime.jpg?raw=true', title: 'Summer Time'},
+        {image: 'https://github.com/PennyNichols/react-gallery/blob/main/react-gallery/public/images/sunrise.jpg?raw=true', title: 'Sunrises'},
+        {image: 'https://github.com/PennyNichols/react-gallery/blob/main/react-gallery/public/images/sunset.jpg?raw=true', title: 'Sunsets'},
+        {image: 'https://github.com/PennyNichols/react-gallery/blob/main/react-gallery/public/images/waterfall.jpg?raw=true', title: 'Waterfalls'},
+        {image: 'https://github.com/PennyNichols/react-gallery/blob/main/react-gallery/public/images/winter.jpg?raw=true', title: 'Winter Time'}
     ];
 
     const renderAlbums = (card, index) => {
@@ -28,7 +28,7 @@ const Albums = () => {
         );
     };
 
-    return <div className='App'>{albumInfo.map(renderAlbums)}</div>;
+    return <div className='grid'>{albumInfo.map(renderAlbums)}</div>;
 
 };
 

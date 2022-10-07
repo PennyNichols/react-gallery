@@ -29,6 +29,32 @@
   color: #61dafb;
 }
 
+img{
+  width: 15rem;
+  height: 15rem;
+  object-fit: cover;
+  padding: 0;
+}
+
+img:hover{
+  transition: all .5s;
+  transform: scale(1.8);
+}
+
+.grid{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.card{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  overflow: hidden;
+  box-shadow: rgb(0 0 0 / 75%) 3px 3px 9px 2px;
+  padding: 0;
+  border: none;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
