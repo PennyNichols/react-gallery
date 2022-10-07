@@ -1,6 +1,6 @@
 import './App.css';
 import Header from './components/Header';
-import Albums from './components/albums/Albums';
+import Albums from './components/Albums';
 
 function App() {
   return (
