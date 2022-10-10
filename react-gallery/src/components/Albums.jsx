@@ -17,18 +17,18 @@ const Albums = () => {
         {image: 'https://github.com/PennyNichols/react-gallery/blob/main/react-gallery/public/images/winter.jpg?raw=true', title: 'Winter Time'}
     ];
 
-    const renderAlbums = (card, index) => {
+    const renderAlbums = (props, index) => {
         return(
             <Card style={{ width: '18rem'}} key={index}>
-                <Card.Img variant='top' src={card.image}/>
+                <Card.Img variant='top' src={props.image}/>
                 <Card.Body>
-                    <Card.Title>{card.title}</Card.Title>
+                    <Card.Title>{props.title}</Card.Title>
                 </Card.Body>
             </Card>
         );
     };
 
-    return <div className='grid'>{albumInfo.map(renderAlbums)}</div>;
+    return <div className='flex'>{albumInfo.map(renderAlbums)}</div>;
 
 };
 

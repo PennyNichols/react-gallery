@@ -38,10 +38,10 @@ img{
 
 img:hover{
   transition: all .5s;
-  transform: scale(1.8);
+  transform: scale(1.55);
 }
 
-.grid{
+.flex{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
